@@ -1,16 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>节点编辑器</h1>
+  <div id="app">
+      <ControlPanel class="subFrame"/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import ControlPanel from "./components/ControlPanel.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ControlPanel
+  },
 }
 </script>
 
@@ -21,6 +22,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
 }
+#h3{
+  height: 5px;
+}
+
 </style>
